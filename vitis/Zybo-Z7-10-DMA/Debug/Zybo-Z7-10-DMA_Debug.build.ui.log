@@ -1,0 +1,60 @@
+2026-05-04T11:09:02.295418300255-11:09:02 **** Incremental Build of configuration Debug for project Zybo-Z7-10-DMA ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/demo.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo-Z7-10-DMA-sw.ide\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
+000/Zybo-Z7-10-DMA/src/demo.c208-1-1"/*" within comment [-Wcomment]1-../src/demo.c:208:9: warning: "/*" within comment [-Wcomment]
+000-  208 |         /*
+000-      |          
+000/Zybo-Z7-10-DMA/src/demo.c393-1-1"/*" within comment [-Wcomment]1-../src/demo.c:393:9: warning: "/*" within comment [-Wcomment]
+000-  393 |         /*
+000-      |          
+000/Zybo-Z7-10-DMA/src/demo.c542-1-1'RunKeywordSpotting' defined but not used [-Wunused-function]1RunKeywordSpotting../src/demo.c:542:13: warning: 'RunKeywordSpotting' defined but not used [-Wunused-function]
+000-  542 | static void RunKeywordSpotting(const int16_t *audio_16k, int num_samples)
+000-      |             ^~~~~~~~~~~~~~~~~~
+000/Zybo-Z7-10-DMA/src/demo.c490-1-1'PrintRawHexSamples' defined but not used [-Wunused-function]1PrintRawHexSamples../src/demo.c:490:13: warning: 'PrintRawHexSamples' defined but not used [-Wunused-function]
+000-  490 | static void PrintRawHexSamples(void)
+000-      |             ^~~~~~~~~~~~~~~~~~
+000/Zybo-Z7-10-DMA/src/demo.c451-1-1'PrintEvenOddDiagnostics' defined but not used [-Wunused-function]1PrintEvenOddDiagnostics../src/demo.c:451:13: warning: 'PrintEvenOddDiagnostics' defined but not used [-Wunused-function]
+000-  451 | static void PrintEvenOddDiagnostics(void)
+000-      |             ^~~~~~~~~~~~~~~~~~~~~~~
+000/Zybo-Z7-10-DMA/src/demo.c421-1-1'PrintAudioStats' defined but not used [-Wunused-function]1PrintAudioStats../src/demo.c:421:13: warning: 'PrintAudioStats' defined but not used [-Wunused-function]
+000-  421 | static void PrintAudioStats(void)
+000-      |             ^~~~~~~~~~~~~~~
+000/Zybo-Z7-10-DMA/src/demo.c245-1-1'PrintShiftDiagnostics' defined but not used [-Wunused-function]1PrintShiftDiagnostics../src/demo.c:245:13: warning: 'PrintShiftDiagnostics' defined but not used [-Wunused-function]
+000-  245 | static void PrintShiftDiagnostics(void)
+000-      |             ^~~~~~~~~~~~~~~~~~~~~
+000/Zybo-Z7-10-DMA/src/demo.c164-1-1'ExtractOneSecond16k' defined but not used [-Wunused-function]1ExtractOneSecond16k../src/demo.c:164:12: warning: 'ExtractOneSecond16k' defined but not used [-Wunused-function]
+000-  164 | static int ExtractOneSecond16k(const int16_t *pcm,
+000-      |            ^~~~~~~~~~~~~~~~~~~
+000/Zybo-Z7-10-DMA/src/demo.c151-1-1'PrintRawAudioSamples' defined but not used [-Wunused-function]1PrintRawAudioSamples../src/demo.c:151:13: warning: 'PrintRawAudioSamples' defined but not used [-Wunused-function]
+000-  151 | static void PrintRawAudioSamples(void)
+000-      |             ^~~~~~~~~~~~~~~~~~~~
+000-'Finished building: ../src/demo.c'
+000-' '
+000-'Building file: ../src/kws.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo-Z7-10-DMA-sw.ide\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/kws.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/kws.d" -MT"src/kws.o" -o "src/kws.o" "../src/kws.c"
+000/Zybo-Z7-10-DMA/src/kws.c5-1-1'PrintKwsSamples' defined but not used [-Wunused-function]1PrintKwsSamples../src/kws.c:5:13: warning: 'PrintKwsSamples' defined but not used [-Wunused-function]
+000-    5 | static void PrintKwsSamples(const int16_t *audio, int n)
+000-      |             ^~~~~~~~~~~~~~~
+000-'Finished building: ../src/kws.c'
+000-' '
+000-'Building target: Zybo-Z7-10-DMA.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bsplib/lib -o "Zybo-Z7-10-DMA.elf"  ./src/userio/userio.o  ./src/intc/intc.o  ./src/iic/iic.o  ./src/dma/dma.o  ./src/audio/audio.o  ./src/demo.o ./src/kws.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: Zybo-Z7-10-DMA.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size Zybo-Z7-10-DMA.elf  |tee "Zybo-Z7-10-DMA.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  61585	   3088	1256688	1321361	 142991	Zybo-Z7-10-DMA.elf
+000-'Finished building: Zybo-Z7-10-DMA.elf.size'
+000-' '
+00255-
+11:09:03 Build Finished (took 1s.390ms)
+

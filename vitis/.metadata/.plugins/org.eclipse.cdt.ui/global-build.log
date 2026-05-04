@@ -1,0 +1,70 @@
+Nothing to build in platform 'system_wrapper'
+
+11:09:02 **** Incremental Build of configuration Debug for project Zybo-Z7-10-DMA ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo-Z7-10-DMA-sw.ide\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
+../src/demo.c:208:9: warning: "/*" within comment [-Wcomment]
+  208 |         /*
+      |          
+../src/demo.c:393:9: warning: "/*" within comment [-Wcomment]
+  393 |         /*
+      |          
+../src/demo.c:542:13: warning: 'RunKeywordSpotting' defined but not used [-Wunused-function]
+  542 | static void RunKeywordSpotting(const int16_t *audio_16k, int num_samples)
+      |             ^~~~~~~~~~~~~~~~~~
+../src/demo.c:490:13: warning: 'PrintRawHexSamples' defined but not used [-Wunused-function]
+  490 | static void PrintRawHexSamples(void)
+      |             ^~~~~~~~~~~~~~~~~~
+../src/demo.c:451:13: warning: 'PrintEvenOddDiagnostics' defined but not used [-Wunused-function]
+  451 | static void PrintEvenOddDiagnostics(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+../src/demo.c:421:13: warning: 'PrintAudioStats' defined but not used [-Wunused-function]
+  421 | static void PrintAudioStats(void)
+      |             ^~~~~~~~~~~~~~~
+../src/demo.c:245:13: warning: 'PrintShiftDiagnostics' defined but not used [-Wunused-function]
+  245 | static void PrintShiftDiagnostics(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+../src/demo.c:164:12: warning: 'ExtractOneSecond16k' defined but not used [-Wunused-function]
+  164 | static int ExtractOneSecond16k(const int16_t *pcm,
+      |            ^~~~~~~~~~~~~~~~~~~
+../src/demo.c:151:13: warning: 'PrintRawAudioSamples' defined but not used [-Wunused-function]
+  151 | static void PrintRawAudioSamples(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/demo.c'
+' '
+'Building file: ../src/kws.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo-Z7-10-DMA-sw.ide\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/kws.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/kws.d" -MT"src/kws.o" -o "src/kws.o" "../src/kws.c"
+../src/kws.c:5:13: warning: 'PrintKwsSamples' defined but not used [-Wunused-function]
+    5 | static void PrintKwsSamples(const int16_t *audio, int n)
+      |             ^~~~~~~~~~~~~~~
+'Finished building: ../src/kws.c'
+' '
+'Building target: Zybo-Z7-10-DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bsplib/lib -o "Zybo-Z7-10-DMA.elf"  ./src/userio/userio.o  ./src/intc/intc.o  ./src/iic/iic.o  ./src/dma/dma.o  ./src/audio/audio.o  ./src/demo.o ./src/kws.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Zybo-Z7-10-DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Zybo-Z7-10-DMA.elf  |tee "Zybo-Z7-10-DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61585	   3088	1256688	1321361	 142991	Zybo-Z7-10-DMA.elf
+'Finished building: Zybo-Z7-10-DMA.elf.size'
+' '
+11:09:04 **** Incremental Build of configuration Debug for project Zybo-Z7-10-DMA_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 65319 C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/system_wrapper.xpfm domain_ps7_cortexa9_0 C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/Zybo-Z7-10-DMA_system/Debug/system.bif
+ECHO is off.
+ECHO is off.
+sdcard_gen --xpfm C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/system_wrapper.xpfm --sys_config system_wrapper --bif C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/Zybo-Z7-10-DMA_system/Debug/system.bif --bitstream C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/Zybo-Z7-10-DMA/_ide/bitstream/system_wrapper.bit --elf C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/Zybo-Z7-10-DMA/Debug/Zybo-Z7-10-DMA.elf,ps7_cortexa9_0
+ECHO is off.
+ECHO is off.
+creating BOOT.BIN using C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/Zybo-Z7-10-DMA/_ide/bitstream/system_wrapper.bit
+Running C:/Xilinx/Vitis/2023.1/bin/bootgen  -image C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/Zybo-Z7-10-DMA_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
