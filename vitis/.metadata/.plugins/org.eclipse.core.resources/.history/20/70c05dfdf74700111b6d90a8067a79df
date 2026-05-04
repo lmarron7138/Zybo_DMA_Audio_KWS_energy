@@ -1,0 +1,140 @@
+/*#include "kws.h"
+#include "xil_printf.h"
+
+
+static void PrintKwsSamples(const int16_t *audio, int n)
+{
+    int limit = n;
+
+    if (limit > 80)
+    {
+        limit = 80;
+    }
+
+    xil_printf("\r\nFirst KWS samples:\r\n");
+
+    for (int i = 0; i < limit; i++)
+    {
+        xil_printf("%d\r\n", audio[i]);
+    }
+}
+
+static int DetectSpeechEnergyLocal(const int16_t *audio, int n)
+{
+    long long sum_abs = 0;
+
+    if (n <= 0)
+    {
+        return 0;
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        int v = audio[i];
+
+        if (v < 0)
+        {
+            v = -v;
+        }
+
+        sum_abs += v;
+    }
+
+    int avg_abs = (int)(sum_abs / n);
+
+    xil_printf("\r\nKWS energy avg_abs = %d\r\n", avg_abs);
+
+    if (avg_abs > 100)
+    {
+        return 1;
+    }
+
+    return 0;
+}
+
+void KWS_Init(void)
+{
+    xil_printf("\r\nKWS_Init complete\r\n");
+}
+
+void KWS_Run(const int16_t *audio_16k, int num_samples)
+{
+    if (num_samples != KWS_INPUT_SAMPLES)
+    {
+        xil_printf("\r\nKWS error: expected 16000 samples, got %d\r\n",
+                   num_samples);
+        return;
+    }
+
+    int speech_present = DetectSpeechEnergyLocal(audio_16k, num_samples);
+
+    if (!speech_present)
+    {
+        xil_printf("\r\nKWS result: silence\r\n");
+        return;
+    }
+
+    /*
+     * Placeholder for real keyword model.
+     * Later:
+     * 1. Convert audio to features
+     * 2. Run neural network
+     * 3. Print keyword score
+
+    xil_printf("\r\nKWS result: speech present, ready for model\r\n");
+}
+*/
+
+#include "kws.h"
+#include "xil_printf.h"
+
+static int DetectSpeechEnergyLocal(const int16_t *audio, int n)
+{
+    long long sum_abs = 0;
+
+    if (n <= 0)
+    {
+        return 0;
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        int v = audio[i];
+
+        if (v < 0)
+        {
+            v = -v;
+        }
+
+        sum_abs += v;
+    }
+
+    int avg_abs = (int)(sum_abs / n);
+
+    xil_printf("\r\nKWS energy avg_abs = %d\r\n", avg_abs);
+
+    return avg_abs > 100;
+}
+
+void KWS_Init(void)
+{
+    xil_printf("\r\nKWS_Init complete\r\n");
+}
+
+void KWS_Run(const int16_t *audio_16k, int num_samples)
+{
+    if (num_samples != KWS_INPUT_SAMPLES)
+    {
+        xil_printf("\r\nKWS error: expected 16000 samples, got %d\r\n",
+                   num_samples);
+        return;
+    }
+
+    if (!DetectSpeechEnergyLocal(audio_16k, num_samples))
+    {
+        xil_printf("\r\nKWS result: silence\r\n");
+        return;
+    }
+
+    xil_printf("\r\nKWS result: speech present, ready for model\r\n");
+}

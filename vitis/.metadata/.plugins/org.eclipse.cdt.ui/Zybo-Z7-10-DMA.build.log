@@ -1,12 +1,37 @@
-11:09:02 **** Incremental Build of configuration Debug for project Zybo-Z7-10-DMA ****
+13:37:10 **** Build of configuration Debug for project Zybo-Z7-10-DMA ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
+'Building file: ../src/userio/userio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo_DMA_Audio_KWS_energy-main\Zybo_DMA_Audio_KWS_energy-main\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/userio/userio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/userio/userio.d" -MT"src/userio/userio.o" -o "src/userio/userio.o" "../src/userio/userio.c"
+'Finished building: ../src/userio/userio.c'
+' '
+'Building file: ../src/intc/intc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo_DMA_Audio_KWS_energy-main\Zybo_DMA_Audio_KWS_energy-main\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/intc/intc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/intc/intc.d" -MT"src/intc/intc.o" -o "src/intc/intc.o" "../src/intc/intc.c"
+'Finished building: ../src/intc/intc.c'
+' '
+'Building file: ../src/iic/iic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo_DMA_Audio_KWS_energy-main\Zybo_DMA_Audio_KWS_energy-main\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/iic/iic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/iic/iic.d" -MT"src/iic/iic.o" -o "src/iic/iic.o" "../src/iic/iic.c"
+'Finished building: ../src/iic/iic.c'
+' '
+'Building file: ../src/dma/dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo_DMA_Audio_KWS_energy-main\Zybo_DMA_Audio_KWS_energy-main\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/dma/dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/dma/dma.d" -MT"src/dma/dma.o" -o "src/dma/dma.o" "../src/dma/dma.c"
+'Finished building: ../src/dma/dma.c'
+' '
+'Building file: ../src/audio/audio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo_DMA_Audio_KWS_energy-main\Zybo_DMA_Audio_KWS_energy-main\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/audio/audio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/audio/audio.d" -MT"src/audio/audio.o" -o "src/audio/audio.o" "../src/audio/audio.c"
+'Finished building: ../src/audio/audio.c'
+' '
 'Building file: ../src/demo.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo-Z7-10-DMA-sw.ide\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo_DMA_Audio_KWS_energy-main\Zybo_DMA_Audio_KWS_energy-main\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
 ../src/demo.c:208:9: warning: "/*" within comment [-Wcomment]
   208 |         /*
       |          
@@ -36,13 +61,16 @@ arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo-Z7-10-DMA-sw.i
       |             ^~~~~~~~~~~~~~~~~~~~
 'Finished building: ../src/demo.c'
 ' '
-'Building file: ../src/kws.c'
+'Building file: ../src/kws.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ... -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo_DMA_Audio_KWS_energy-main\Zybo_DMA_Audio_KWS_energy-main\vitis\system_wrapper\ps7_cortexa9_0\domain_ps7_cortexa9_0\bsp\ps7_cortexa9_0\include" -c -fmessage-length=0 -MT"src/kws.o" -MMD -MP -MF"src/kws.d" -MT"src/kws.d" -o "src/kws.o" "../src/kws.cc"
+arm-xilinx-eabi-g++.exe: warning: ...: linker input file unused because linking not done
+'Finished building: ../src/kws.cc'
+' '
+'Building file: ../src/platform.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo-Z7-10-DMA-sw.ide\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/kws.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/kws.d" -MT"src/kws.o" -o "src/kws.o" "../src/kws.c"
-../src/kws.c:5:13: warning: 'PrintKwsSamples' defined but not used [-Wunused-function]
-    5 | static void PrintKwsSamples(const int16_t *audio, int n)
-      |             ^~~~~~~~~~~~~~~
-'Finished building: ../src/kws.c'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Lennym\Downloads\Zybo_DMA_Audio_KWS_energy-main\Zybo_DMA_Audio_KWS_energy-main\vitis\Zybo-Z7-10-DMA\src" -IC:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/domain_ps7_cortexa9_0/bspinclude/include -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
 ' '
 'Building target: Zybo-Z7-10-DMA.elf'
 'Invoking: ARM v7 gcc linker'
@@ -52,9 +80,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Zybo-Z7-10-DMA.elf  |tee "Zybo-Z7-10-DMA.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  61585	   3088	1256688	1321361	 142991	Zybo-Z7-10-DMA.elf
+  66513	   3088	1256696	1326297	 143cd9	Zybo-Z7-10-DMA.elf
 'Finished building: Zybo-Z7-10-DMA.elf.size'
 ' '
 
-11:09:03 Build Finished (took 1s.390ms)
+13:37:12 Build Finished (took 2s.746ms)
 

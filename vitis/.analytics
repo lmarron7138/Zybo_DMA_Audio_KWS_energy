@@ -44,3 +44,24 @@ timestamp=[2026-05-04 10:43:23], mode=BUILD, duration=0:00:00.385, duration_ms=3
 timestamp=[2026-05-04 10:43:29], mode=BUILD, duration=0:00:06.191, duration_ms=6191, data={name=Zybo-Z7-10-DMA_system, configuration=Debug, clean_build=false}
 timestamp=[2026-05-04 11:09:03], mode=BUILD, duration=0:00:01.399, duration_ms=1399, data={name=Zybo-Z7-10-DMA, configuration=Debug, clean_build=false}
 timestamp=[2026-05-04 11:09:10], mode=BUILD, duration=0:00:06.688, duration_ms=6688, data={name=Zybo-Z7-10-DMA_system, configuration=Debug, clean_build=false}
+timestamp=[2026-05-04 13:24:44], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.299, duration_ms=299, data={}
+timestamp=[2026-05-04 13:24:44], mode=WORKBENCH_START, duration=0:00:10.165, duration_ms=10165, data={}
+timestamp=[2026-05-04 13:24:44], mode=WORKBENCH_UI_INIT, duration=0:00:00.149, duration_ms=149, data={editors_count=6, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Zybo-Z7-10-DMA,Zybo-Z7-10-DMA_system,system_wrapper}
+timestamp=[2026-05-04 13:25:03], mode=PLATFORM_GENERATION, duration=0:00:03.184, duration_ms=3184, data={name=system_wrapper}
+timestamp=[2026-05-04 13:25:04], mode=BUILD, duration=0:00:00.205, duration_ms=205, data={name=Zybo-Z7-10-DMA, configuration=Debug, clean_build=true}
+timestamp=[2026-05-04 13:25:22], mode=PLATFORM_GENERATION, duration=0:00:14.759, duration_ms=14759, data={name=system_wrapper}
+timestamp=[2026-05-04 13:25:26], mode=BUILD, duration=0:00:02.717, duration_ms=2717, data={name=Zybo-Z7-10-DMA, configuration=Debug, clean_build=false}
+timestamp=[2026-05-04 13:25:32], mode=BUILD, duration=0:00:06.013, duration_ms=6013, data={name=Zybo-Z7-10-DMA_system, configuration=Debug, clean_build=false}
+timestamp=[2026-05-04 13:29:21], mode=BUILD, duration=0:00:00.275, duration_ms=275, data={name=Zybo-Z7-10-DMA, configuration=Debug, clean_build=true}
+timestamp=[2026-05-04 13:29:23], mode=BUILD, duration=0:00:02.012, duration_ms=2012, data={name=Zybo-Z7-10-DMA, configuration=Debug, clean_build=false}
+timestamp=[2026-05-04 13:29:53], mode=BUILD, duration=0:00:00.521, duration_ms=521, data={name=Zybo-Z7-10-DMA, configuration=Debug, clean_build=false}
+timestamp=[2026-05-04 13:32:39], mode=PLATFORM_GENERATION, duration=0:00:06.760, duration_ms=6760, data={name=system_wrapper}
+timestamp=[2026-05-04 13:32:39], mode=BUILD, duration=0:00:00.205, duration_ms=205, data={name=Zybo-Z7-10-DMA, configuration=Debug, clean_build=true}
+timestamp=[2026-05-04 13:32:52], mode=PLATFORM_GENERATION, duration=0:00:11.284, duration_ms=11284, data={name=system_wrapper}
+timestamp=[2026-05-04 13:32:52], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=Zybo-Z7-10-DMA, configuration=Debug, clean_build=true}
+timestamp=[2026-05-04 13:32:55], mode=BUILD, duration=0:00:02.583, duration_ms=2583, data={name=Zybo-Z7-10-DMA, configuration=Debug, clean_build=false}
+timestamp=[2026-05-04 13:36:44], mode=PLATFORM_GENERATION, duration=0:00:06.765, duration_ms=6765, data={name=system_wrapper}
+timestamp=[2026-05-04 13:36:44], mode=BUILD, duration=0:00:00.205, duration_ms=205, data={name=Zybo-Z7-10-DMA, configuration=Debug, clean_build=true}
+timestamp=[2026-05-04 13:37:09], mode=PLATFORM_GENERATION, duration=0:00:11.452, duration_ms=11452, data={name=system_wrapper}
+timestamp=[2026-05-04 13:37:10], mode=BUILD, duration=0:00:00.213, duration_ms=213, data={name=Zybo-Z7-10-DMA, configuration=Debug, clean_build=true}
+timestamp=[2026-05-04 13:37:12], mode=BUILD, duration=0:00:02.755, duration_ms=2755, data={name=Zybo-Z7-10-DMA, configuration=Debug, clean_build=false}

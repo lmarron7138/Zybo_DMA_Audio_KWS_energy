@@ -137,6 +137,38 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="xilinx.gnu.armv7.exe.debug.326265009.133051107" name="kws.c" rcbsApplicability="disable" resourcePath="src/kws.cc" toolsToInvoke="xilinx.gnu.armv7.cxx.compiler.419896708">
+                        						
+                        <tool command="arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ..." id="xilinx.gnu.armv7.cxx.compiler.419896708" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.compiler">
+                            							
+                            <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.1387491441" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+                            							
+                            <option id="xilinx.gnu.compiler.option.debugging.level.1091034234" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+                            							
+                            <option id="xilinx.gnu.compiler.dircategory.includes.1496236152" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/system_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/ps7_cortexa9_0/include}&quot;"/>
+                                							
+                            </option>
+                            							
+                            <inputType id="xilinx.gnu.armv7.cxx.compiler.input.711413767" name="C++ source files" superClass="xilinx.gnu.armv7.cxx.compiler.input"/>
+                            						
+                        </tool>
+                        						
+                        <tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.105927025" name="Resource Custom Build Step">
+                            							
+                            <inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1479012587" name="Resource Custom Build Step Input Type">
+                                								
+                                <additionalInput kind="additionalinputdependency" paths=""/>
+                                							
+                            </inputType>
+                            							
+                            <outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1357683176" name="Resource Custom Build Step Output Type"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
                     <sourceEntries>
                         						
                         <entry excluding="_ide" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>

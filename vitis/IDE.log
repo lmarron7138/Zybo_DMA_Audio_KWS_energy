@@ -714,3 +714,118 @@ con
 ----------------End of Script----------------
 
 11:09:54 INFO  : Launch script is exported to file 'C:\Users\Lennym\Downloads\Zybo-Z7-10-DMA-sw.ide\vitis\Zybo-Z7-10-DMA_system\_ide\scripts\debugger_zybo-z7-10-dma-default_18.tcl'
+13:24:40 DEBUG : Logs will be stored at 'C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/IDE.log'.
+13:24:40 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Lennym\Downloads\Zybo_DMA_Audio_KWS_energy-main\Zybo_DMA_Audio_KWS_energy-main\vitis\temp_xsdb_launch_script.tcl
+13:24:42 INFO  : XSCT server has started successfully.
+13:24:42 INFO  : Successfully done setting XSCT server connection channel  
+13:24:42 INFO  : plnx-install-location is set to ''
+13:24:42 INFO  : Successfully done setting workspace for the tool. 
+13:24:44 INFO  : Platform repository initialization has completed.
+13:24:44 INFO  : Registering command handlers for Vitis TCF services
+13:24:45 INFO  : Successfully done query RDI_DATADIR 
+13:25:03 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+13:25:21 INFO  : Result from executing command 'getProjects': system_wrapper
+13:25:21 INFO  : Result from executing command 'getPlatforms': system_wrapper|C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/system_wrapper.xpfm;xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+13:25:22 INFO  : Checking for BSP changes to sync application flags for project 'Zybo-Z7-10-DMA'...
+13:25:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:25:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351BE7A46A' is selected.
+13:25:44 INFO  : 'jtag frequency' command is executed.
+13:25:44 INFO  : Context for 'APU' is selected.
+13:25:44 INFO  : System reset is completed.
+13:25:47 INFO  : 'after 3000' command is executed.
+13:25:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351BE7A46A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351BE7A46A-13722093-0"}' command is executed.
+13:25:48 INFO  : Device configured successfully with "C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/Zybo-Z7-10-DMA/_ide/bitstream/system_wrapper.bit"
+13:25:48 INFO  : Context for 'APU' is selected.
+13:25:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+13:25:48 INFO  : 'configparams force-mem-access 1' command is executed.
+13:25:48 INFO  : Context for 'APU' is selected.
+13:25:48 INFO  : Sourcing of 'C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/Zybo-Z7-10-DMA/_ide/psinit/ps7_init.tcl' is done.
+13:25:49 INFO  : 'ps7_init' command is executed.
+13:25:49 INFO  : 'ps7_post_config' command is executed.
+13:25:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:49 INFO  : The application 'C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/Zybo-Z7-10-DMA/Debug/Zybo-Z7-10-DMA.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:25:49 INFO  : 'configparams force-mem-access 0' command is executed.
+13:25:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351BE7A46A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351BE7A46A-13722093-0"}
+fpga -file C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/Zybo-Z7-10-DMA/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/Zybo-Z7-10-DMA/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/Zybo-Z7-10-DMA/Debug/Zybo-Z7-10-DMA.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:25:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:49 INFO  : 'con' command is executed.
+13:25:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:25:49 INFO  : Launch script is exported to file 'C:\Users\Lennym\Downloads\Zybo_DMA_Audio_KWS_energy-main\Zybo_DMA_Audio_KWS_energy-main\vitis\Zybo-Z7-10-DMA_system\_ide\scripts\debugger_zybo-z7-10-dma-default_19.tcl'
+13:29:21 INFO  : Checking for BSP changes to sync application flags for project 'Zybo-Z7-10-DMA'...
+13:29:52 INFO  : Checking for BSP changes to sync application flags for project 'Zybo-Z7-10-DMA'...
+13:32:34 INFO  : Result from executing command 'removePlatformRepo': 
+13:32:51 INFO  : Result from executing command 'getProjects': system_wrapper
+13:32:51 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+13:32:52 INFO  : Checking for BSP changes to sync application flags for project 'Zybo-Z7-10-DMA'...
+13:36:38 INFO  : Result from executing command 'removePlatformRepo': 
+13:37:09 INFO  : Result from executing command 'getProjects': system_wrapper
+13:37:09 INFO  : Result from executing command 'getPlatforms': system_wrapper|C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/system_wrapper.xpfm;xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+13:37:10 INFO  : Checking for BSP changes to sync application flags for project 'Zybo-Z7-10-DMA'...
+13:37:37 INFO  : Disconnected from the channel tcfchan#4.
+13:37:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:37:38 INFO  : Jtag cable 'Digilent Zybo Z7 210351BE7A46A' is selected.
+13:37:38 INFO  : 'jtag frequency' command is executed.
+13:37:40 INFO  : Context for 'APU' is selected.
+13:37:40 INFO  : System reset is completed.
+13:37:43 INFO  : 'after 3000' command is executed.
+13:37:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351BE7A46A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351BE7A46A-13722093-0"}' command is executed.
+13:37:45 INFO  : Device configured successfully with "C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/Zybo-Z7-10-DMA/_ide/bitstream/system_wrapper.bit"
+13:37:45 INFO  : Context for 'APU' is selected.
+13:37:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+13:37:45 INFO  : 'configparams force-mem-access 1' command is executed.
+13:37:45 INFO  : Context for 'APU' is selected.
+13:37:45 INFO  : Sourcing of 'C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/Zybo-Z7-10-DMA/_ide/psinit/ps7_init.tcl' is done.
+13:37:45 INFO  : 'ps7_init' command is executed.
+13:37:45 INFO  : 'ps7_post_config' command is executed.
+13:37:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:37:45 INFO  : The application 'C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/Zybo-Z7-10-DMA/Debug/Zybo-Z7-10-DMA.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:37:45 INFO  : 'configparams force-mem-access 0' command is executed.
+13:37:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351BE7A46A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351BE7A46A-13722093-0"}
+fpga -file C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/Zybo-Z7-10-DMA/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Lennym/Downloads/Zybo-Z7-10-DMA-sw.ide/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/Zybo-Z7-10-DMA/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Lennym/Downloads/Zybo_DMA_Audio_KWS_energy-main/Zybo_DMA_Audio_KWS_energy-main/vitis/Zybo-Z7-10-DMA/Debug/Zybo-Z7-10-DMA.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:37:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:37:45 INFO  : 'con' command is executed.
+13:37:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:37:45 INFO  : Launch script is exported to file 'C:\Users\Lennym\Downloads\Zybo_DMA_Audio_KWS_energy-main\Zybo_DMA_Audio_KWS_energy-main\vitis\Zybo-Z7-10-DMA_system\_ide\scripts\debugger_zybo-z7-10-dma-default_20.tcl'
+13:40:34 INFO  : Disconnected from the channel tcfchan#9.

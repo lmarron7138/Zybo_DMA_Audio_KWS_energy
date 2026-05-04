@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Zybo-Z7-10-DMA/src/kws.c&apos; to &apos;kws.cc&apos;" description="Rename resource &apos;kws.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/kws.c" name="kws.cc" stamp="1777926416149" updateReferences="true"/>
+</session>
